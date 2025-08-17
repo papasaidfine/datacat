@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebooks
+*.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# DataCat specific
+catalog.db
+data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test and cache
+.pytest_cache/
+*.log
+
+# Environment
+.env
+venv/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Ignore test outputs
