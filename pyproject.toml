@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "datacat"
+name = "datacatalog-storage"
 version = "1.0.0"
 description = "Catalog-based data storage system with pluggable serializers"
 readme = "README.md"
