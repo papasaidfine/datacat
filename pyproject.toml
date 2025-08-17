@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datacat"
+version = "1.0.0"
+description = "Catalog-based data storage system with pluggable serializers"
+readme = "README.md"
+license = "MIT"
+authors = [
+    {name = "DataCat Team", email = "datacat@example.com"}
+]
+maintainers = [
+    {name = "DataCat Team", email = "datacat@example.com"}
+]
+keywords = ["data", "storage", "serialization", "catalog", "numpy", "scipy"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.20.0",
+    "scipy>=1.7.0",
+    "duckdb>=0.8.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/papasaidfine/datacat"
+Repository = "https://github.com/papasaidfine/datacat"
+"Bug Reports" = "https://github.com/papasaidfine/datacat/issues"
+Documentation = "https://github.com/papasaidfine/datacat#readme"
+
+[tool.setuptools]
+packages = ["datacat"]
+
+[tool.setuptools.package-dir]
+"" = "."
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]

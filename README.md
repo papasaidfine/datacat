@@ -1,5 +1,8 @@
 # DataCat - Data Storage System
 
+[![PyPI version](https://badge.fury.io/py/datacat.svg)](https://pypi.org/project/datacat/)
+[![GitHub tag](https://img.shields.io/github/v/tag/papasaidfine/datacat?sort=semver)](https://github.com/papasaidfine/datacat/tags)
+
 A data storage system with catalog storage and pluggable serializers.
 
 ## Features
